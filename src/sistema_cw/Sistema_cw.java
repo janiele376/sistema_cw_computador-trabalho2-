@@ -1,21 +1,30 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package sistema_cw;
 
-/**
- *
- * @author Aluno
- */
+import conexaoBD.conexaoBD; // Importa a classe do pacote correto
+import java.sql.Connection;
+import javax.swing.JOptionPane;
+import telas.Login; 
+
 public class Sistema_cw {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
-        // TODO code application logic here
+        try {
+            Connection con = conexaoBD.getConexao();
+
+            if (con != null) {
+                con.close();
+                
+                java.awt.EventQueue.invokeLater(() -> {
+                    new Login().setVisible(true);
+                });
+            }
+        } catch (Exception e) {
+            JOptionPane.showMessageDialog(null, 
+                "Erro ao conectar ao banco sistema_cw!\n" + e.getMessage(),
+                "Erro Crítico", 
+                JOptionPane.ERROR_MESSAGE);
+            
+            System.exit(0);
+        }
     }
-    
 }
