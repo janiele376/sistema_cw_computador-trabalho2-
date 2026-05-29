@@ -31,8 +31,8 @@
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="1" attributes="0">
-              <EmptySpace max="32767" attributes="0"/>
-              <Component id="TelaLogin" min="-2" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="TelaLogin" max="32767" attributes="0"/>
               <EmptySpace max="-2" attributes="0"/>
           </Group>
       </Group>
@@ -85,22 +85,23 @@
           <Layout>
             <DimensionLayout dim="0">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" alignment="1" attributes="0">
-                      <EmptySpace pref="39" max="32767" attributes="0"/>
-                      <Group type="103" groupAlignment="1" attributes="0">
-                          <Component id="bt_entrar" min="-2" pref="241" max="-2" attributes="0"/>
-                          <Component id="campo_senha" min="-2" pref="241" max="-2" attributes="0"/>
-                          <Component id="campo_usuario" min="-2" pref="241" max="-2" attributes="0"/>
-                          <Component id="esqueci_senha" alignment="1" min="-2" max="-2" attributes="0"/>
-                      </Group>
-                      <EmptySpace min="-2" pref="35" max="-2" attributes="0"/>
-                  </Group>
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace min="-2" pref="101" max="-2" attributes="0"/>
                       <Component id="titulo_login1" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
                       <Component id="titulo_login2" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="32767" attributes="0"/>
+                  </Group>
+                  <Group type="102" alignment="1" attributes="0">
+                      <EmptySpace pref="39" max="32767" attributes="0"/>
+                      <Group type="103" groupAlignment="1" attributes="0">
+                          <Component id="bt_entrar1" min="-2" pref="241" max="-2" attributes="0"/>
+                          <Component id="bt_entrar" min="-2" pref="241" max="-2" attributes="0"/>
+                          <Component id="campo_senha" min="-2" pref="241" max="-2" attributes="0"/>
+                          <Component id="campo_usuario" min="-2" pref="241" max="-2" attributes="0"/>
+                          <Component id="esqueci_senha" alignment="1" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" pref="35" max="-2" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -120,7 +121,9 @@
                       <Component id="esqueci_senha" min="-2" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="44" max="-2" attributes="0"/>
                       <Component id="bt_entrar" min="-2" pref="37" max="-2" attributes="0"/>
-                      <EmptySpace pref="83" max="32767" attributes="0"/>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Component id="bt_entrar1" min="-2" pref="37" max="-2" attributes="0"/>
+                      <EmptySpace pref="35" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -182,6 +185,17 @@
                 </Property>
                 <Property name="text" type="java.lang.String" value="CW"/>
               </Properties>
+            </Component>
+            <Component class="javax.swing.JButton" name="bt_entrar1">
+              <Properties>
+                <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="ff" green="99" red="33" type="rgb"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="CADASTRO"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="bt_entrar1ActionPerformed"/>
+              </Events>
             </Component>
           </SubComponents>
         </Container>

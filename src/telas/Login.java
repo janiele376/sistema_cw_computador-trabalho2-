@@ -51,6 +51,7 @@ this.repaint();
         esqueci_senha = new javax.swing.JLabel();
         titulo_login1 = new javax.swing.JLabel();
         titulo_login2 = new javax.swing.JLabel();
+        bt_entrar1 = new javax.swing.JButton();
 
         jLabel2.setText("jLabel2");
 
@@ -86,24 +87,33 @@ this.repaint();
         titulo_login2.setForeground(new java.awt.Color(51, 51, 255));
         titulo_login2.setText("CW");
 
+        bt_entrar1.setBackground(new java.awt.Color(51, 153, 255));
+        bt_entrar1.setText("CADASTRO");
+        bt_entrar1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                bt_entrar1ActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout CaixaLoginLayout = new javax.swing.GroupLayout(CaixaLogin);
         CaixaLogin.setLayout(CaixaLoginLayout);
         CaixaLoginLayout.setHorizontalGroup(
             CaixaLoginLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, CaixaLoginLayout.createSequentialGroup()
-                .addContainerGap(39, Short.MAX_VALUE)
-                .addGroup(CaixaLoginLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(bt_entrar, javax.swing.GroupLayout.PREFERRED_SIZE, 241, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(campo_senha, javax.swing.GroupLayout.PREFERRED_SIZE, 241, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(campo_usuario, javax.swing.GroupLayout.PREFERRED_SIZE, 241, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(esqueci_senha))
-                .addGap(35, 35, 35))
             .addGroup(CaixaLoginLayout.createSequentialGroup()
                 .addGap(101, 101, 101)
                 .addComponent(titulo_login1)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(titulo_login2)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, CaixaLoginLayout.createSequentialGroup()
+                .addContainerGap(39, Short.MAX_VALUE)
+                .addGroup(CaixaLoginLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(bt_entrar1, javax.swing.GroupLayout.PREFERRED_SIZE, 241, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(bt_entrar, javax.swing.GroupLayout.PREFERRED_SIZE, 241, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(campo_senha, javax.swing.GroupLayout.PREFERRED_SIZE, 241, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(campo_usuario, javax.swing.GroupLayout.PREFERRED_SIZE, 241, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(esqueci_senha))
+                .addGap(35, 35, 35))
         );
         CaixaLoginLayout.setVerticalGroup(
             CaixaLoginLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -120,7 +130,9 @@ this.repaint();
                 .addComponent(esqueci_senha)
                 .addGap(44, 44, 44)
                 .addComponent(bt_entrar, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(83, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(bt_entrar1, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(35, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout TelaLoginLayout = new javax.swing.GroupLayout(TelaLogin);
@@ -145,8 +157,8 @@ this.repaint();
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(TelaLogin, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap()
+                .addComponent(TelaLogin, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addContainerGap())
         );
         layout.setVerticalGroup(
@@ -198,6 +210,10 @@ this.repaint();
 }
     }//GEN-LAST:event_bt_entrarActionPerformed
 
+    private void bt_entrar1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bt_entrar1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_bt_entrar1ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -237,6 +253,7 @@ this.repaint();
     private javax.swing.JPanel CaixaLogin;
     private javax.swing.JPanel TelaLogin;
     private javax.swing.JButton bt_entrar;
+    private javax.swing.JButton bt_entrar1;
     private javax.swing.JTextField campo_senha;
     private javax.swing.JTextField campo_usuario;
     private javax.swing.JLabel esqueci_senha;
